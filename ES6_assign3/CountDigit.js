@@ -7,7 +7,7 @@
         let digit = 0;
    
        
-        while (N > 0) {
+        while (Number > 0) {
    
           
             digit++;
