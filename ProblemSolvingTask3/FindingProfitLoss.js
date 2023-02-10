@@ -27,5 +27,5 @@ function callError(){
 }
 
 let array=[2,5,3,7,1,9,4];
-let result = profitLoss(array,1,2);
+let result = profitLoss(array,5,6);
 console.log(result);

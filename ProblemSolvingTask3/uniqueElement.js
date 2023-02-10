@@ -22,15 +22,49 @@
 
 
 
-const input1 = [1, 2, 3, 3, 4, 5,2, 6,3,6,1];
-for(i=0;i<input1.length;i++)
-{
-    for(j=i+1;j<input1.length;j++)
-    {
-        if(input1[i]===input1[j])
-        {
-            input1.remove(input1[j]);
-        }
-    }
-}
-console.log(input1);
+
+
+
+
+
+
+function deleteDuplicate (arr, num)  
+{  
+      arr.sort((a,b)=>a-b)
+    if (num == 0 || num == 1)  
+        return num;  
+
+let j = 0;  
+  
+ 
+for (i = 0; i < num - 1; i++)  
+{  
+    if ( arr[i] != arr[i+1])  
+    {  
+        arr[j++] = arr[i];  
+    }     
+      
+}  
+arr[j++] = arr[num -1];  
+return j;  
+}  
+
+
+
+   
+   
+    const arr = [3,3];  
+      
+   
+    let num = arr.length; 
+      
+    
+    new_len = deleteDuplicate(arr, num);  
+      
+    // console.log (" Display the unique elements from the sorted array ");  
+   
+    for ( i = 0; i < new_len; i++)  
+    {  
+        console.log(arr[i]);  
+    }  
+  
