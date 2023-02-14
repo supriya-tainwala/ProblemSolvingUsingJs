@@ -53,7 +53,7 @@ return j;
 
    
    
-    const arr = [3,3];  
+    const arr = [3,3,3,3,3,3];  
       
    
     let num = arr.length; 
